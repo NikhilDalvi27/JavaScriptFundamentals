@@ -10,6 +10,7 @@ const getCountryData = function (country) {
         })
         .then(function (data) {
             console.log(data);
+            console.log(data1);
         });
 }
 getCountryData('portugal');
