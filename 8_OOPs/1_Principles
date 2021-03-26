@@ -1,0 +1,23 @@
+Class is a blueprint(eg Blue print of House)
+using that blueprint(Class)
+we create any number of actual Objects(Instance of Class)(eg Actual Houses)
+
+
+
+4 pillars of OOPS
+
+1)Abstraction
+    Hide the Implementation details that don't matter
+2)Encapsuation
+    Keeping some properties and methods Private,
+    so that they are not accessible outside the class
+    and properties are accessible only through
+    some methods public
+
+3)Inheritance
+    When two class are closely related we can have
+    one class to inherit from the other..forming parent and child relation
+    so as to avoid duplicate code...goal is to reuse the code from parent class
+4)Polymorphism
+    A child class can overwrite the method it inherited
+    from the parent class

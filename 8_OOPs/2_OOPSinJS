@@ -1,0 +1,38 @@
+All objects in Js are linked to a Prototype
+
+
+Prototype   (contains Method)
+    ^
+    |
+    |
+  Object    (Object Inherits Methods from Prototype &
+              Object Delegates behaviour to the Prototype
+              That's why the arrow is pointing upwards)
+
+Above is called as Prototypal Inheritance
+
+
+When we do
+
+const num = [1,2,3];
+num.map(v=> v*2);
+
+Here the map method is defined inside
+the Array.prototype.map()
+
+Array.prototype is the prototype of all the array Objects that we create in JS
+Hence all the arrays have access to the map method
+
+so our num array inherited the map method
+
+
+3 Ways of Applying OOPs in JS
+1)Constructor Function
+-Technique to create object using function
+-This is how OOPS is implemented in JS
+
+2)ES6  Classes
+
+3)Object.create()
+
+
