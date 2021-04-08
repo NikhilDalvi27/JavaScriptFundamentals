@@ -1,3 +1,7 @@
+//todo Callback is just a Function passed as a Argument to Another Function
+// with an Intention of being called laterOn(Intention not necescarrily)
+
+
 //todo Callback Function allow us
 // to create Abstraction here the transformer
 // function doesn't care about the function that is passed to it
@@ -48,3 +52,40 @@ const greet = function () {
 
 const arr = ['Jonas','Martha','Adam'];
 arr.forEach(greet);
+
+
+//todo Another Callback Example
+const geoCode = (address,callback)=>{
+
+    //todo Note the issue is bcoz
+    // we cannot return from the setTimeOut Function
+    setTimeout(()=>{
+        const data = {
+            latitude:0,
+            longitude:0
+        }
+        callback(data);
+    },2000)
+
+}
+
+geoCode('Mumbai',(data)=>{
+    console.log(data);
+})
+
+
+//todo Another Example
+
+const add = (a,b,callback)=>{
+    //todo Note the issue is bcoz
+    // we cannot return from the setTimeOut Function
+    setTimeout(()=>{
+        callback(a+b);
+    },2000)
+}
+
+add(1,4,(sum)=>{
+    console.log(sum);
+})
+
+

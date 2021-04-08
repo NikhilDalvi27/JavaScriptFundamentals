@@ -43,3 +43,20 @@ var addArrow = (a, b) => {
     return a + b;
 };
 addArrow(2, 5, 8);
+
+
+
+//todo other example
+const event = {
+    name : 'BirthDay Party',
+    guessList : ['Andrew','Jen','Mike'],
+    printGuessList(){
+        console.log('Guest List for '+this.name);
+
+        this.guessList.forEach((guest)=>{
+            console.log(guest + 'is attending '+this.name);
+        })
+    }
+}
+
+event.printGuessList();

@@ -74,3 +74,16 @@ jonas.location = 'Portugal';
 jonas['twiiter']= '@twiiter.com';
 
 console.log(jonas);
+
+
+//todo ShortHand Syntax
+const name = 'Andrew'
+const userAge = 27;
+
+const user ={
+    name,   //todo note this is same as  name : name
+    age : userAge,
+    location : 'Philadelphia'
+}
+
+//todo this works bcoz there's a variable name same as the property name

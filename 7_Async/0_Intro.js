@@ -50,3 +50,25 @@ img.addEventListener('load',function () {
 })
 
 p.style.width = '300px';
+
+
+//todo EVENT LOOP Imp Example
+
+console.log('Starting up');
+
+setTimeout(()=>{
+    console.log('Two seconds!');
+},2000);
+
+
+//todo This will run after the below console.log
+// because it's in the callback queue
+// and main function is running in the call stack
+// callback queue is executed only when the call stack is Empty
+// Async Events are registered in Node APIs once the event occur they are pushed in Callback queue
+// This is called Event Loop
+setTimeout(()=>{
+    console.log('0 seconds!');
+},0);
+
+console.log('Finishing up')
