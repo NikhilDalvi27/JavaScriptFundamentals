@@ -6,6 +6,7 @@ const rest = new Map();
 
 //todo First is the Key and the other is value
 rest.set('name', 'Classico Italiano');
+console.log(rest.has('nikhil'));
 rest.set(1, 'Firenze, Italy');
 console.log(rest.set(2, 'Lisbon, Portugal'));
 rest

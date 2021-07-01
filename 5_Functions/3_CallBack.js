@@ -47,11 +47,11 @@ transformer('Javascript is best',oneWord);
 const greet = function () {
     console.log("Hey!!");
 }
-//todo Comment this for running
- document.body.addEventListener('click',greet);
-
-const arr = ['Jonas','Martha','Adam'];
-arr.forEach(greet);
+// //todo Comment this for running
+//  document.body.addEventListener('click',greet);
+//
+// const arr = ['Jonas','Martha','Adam'];
+// arr.forEach(greet);
 
 
 //todo Another Callback Example

@@ -69,7 +69,7 @@ wait(1)
 .then(function () {
     console.log(`3 second passed`);
 
-    return wait(3);
+    // return wait(3);
 
 })
 

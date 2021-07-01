@@ -20,6 +20,7 @@
 
 
 //todo this is not a class but a Constructor Function
+// here we cannot use an arrow function bcoz it doesn't have THIS keyword
 const Person = function (firstName, birthYear) {
 
     console.log(this);
@@ -104,6 +105,7 @@ jonas.calcAge();
 // ProtoType of jonas is equal to the prototype property of its Constructor
 // Person in this case
 
+console.log(107);
 console.log(jonas.__proto__);
 
 console.log(jonas.__proto__ === Person.prototype);

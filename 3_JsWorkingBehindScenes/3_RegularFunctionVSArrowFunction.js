@@ -14,6 +14,7 @@ const jonas = {
         // };
         // Solution 2
         const isMillenial = () => {
+            //todo here this is still pointing to jonas
             console.log(this);
             console.log(this.year >= 1981 && this.year <= 1996);
         };
@@ -52,7 +53,7 @@ const event = {
     guessList : ['Andrew','Jen','Mike'],
     printGuessList(){
         console.log('Guest List for '+this.name);
-
+                                //todo note it's an arrow function
         this.guessList.forEach((guest)=>{
             console.log(guest + 'is attending '+this.name);
         })

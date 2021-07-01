@@ -1,5 +1,5 @@
 //todo Note loop over the Object using the
-// for of loop only
+// FOR OF LOOP only
 // use Object.keys() on that Object
 // that will return an Array of keys inside that Object
 

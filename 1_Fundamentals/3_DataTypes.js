@@ -29,7 +29,7 @@ console.log(typeof year);
 console.log(typeof null);
 
 //todo for String literals use `` $ and {}
-const message =`This year is ${1991}`;
+const message =`This year is ${year}`;
 console.log(message);
 
 //todo literals also used for a new line

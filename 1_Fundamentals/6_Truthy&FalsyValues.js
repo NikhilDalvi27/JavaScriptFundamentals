@@ -1,5 +1,5 @@
 //todo list of Falsy values
-// 0, undefined, null, NAN, '',  false   <------
+// 0(Note), undefined, null, NAN, ''(Note),  false   <------
 // the above values will result in false
 // if attempted to convert in boolean
 
@@ -10,6 +10,8 @@ console.log();
 
 //todo Note that 0 results in false
 console.log(Boolean(0));
+//todo Note that '' results in false
+console.log(Boolean(''));
 console.log(Boolean(undefined));
 console.log(Boolean('Jonas'));
 

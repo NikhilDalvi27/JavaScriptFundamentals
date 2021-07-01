@@ -33,7 +33,7 @@ const getCountryData = function (country) {
 
             if(!neighbour)
                 return;
-
+            //todo Note this is returning a promise
             return fetch(`https://restcountries.eu/rest/v2/name/${neighbour}`)
         })
         .then(function (response) {

@@ -1,5 +1,36 @@
-All objects in Js are linked to a Prototype
+Newly Created Object's __proto__ will point to
+the Base Class's  prototype property
 
+Whenever you create an Object/Function in JS
+JS automatically attaches one Object(__proto__ Which has all the properties defined in prototype of parent)
+to the Object/Function that you created
+
+arr= [2,3];
+(arr.__proto__ is same as Array.prototype)
+
+
+(arr.__proto__ also has __proto__ of its own)
+(arr.__proto__.__proto__ is same as Object.prototype)
+
+Object.prototype.__proto__   is null
+
+Chains ends at Object.prototype --- NOTE
+that why we call everything in JS is an Object
+
+
+NOTE
+var jonas = new Person();
+jonas.__proto__ === Person.prototype     // this will return True
+
+To add Some Methods do
+ParentClass.prototype.funName = function(){
+}
+
+
+
+All objects in Js are linked to a Prototype
+Prototype has functions and properties inside it
+which are accessible to all the object that are linked to that prototype
 
 Prototype   (contains Method)
     ^
@@ -19,6 +50,7 @@ num.map(v=> v*2);
 
 Here the map method is defined inside
 the Array.prototype.map()
+
 
 Array.prototype is the prototype of all the array Objects that we create in JS
 Hence all the arrays have access to the map method

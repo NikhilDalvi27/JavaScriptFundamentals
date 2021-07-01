@@ -51,17 +51,20 @@ console.log(jonas.calcAge());
 
 
 console.log(this);
+//todo this is Simple function ...here THIS will point to undefined
 const calcAge = function (birthYear) {
     console.log(2037 - birthYear);
+    console.log('UNDEFINED');
     console.log(this);
 };
 calcAge(1991);
 
-
+//todo Note this is Arrow function... here THIS will point to the PARENT function
 const calcAgeArrow = birthYear => {
     console.log(2037 - birthYear);
     //todo Note here THIS will point
     // to the parent which is WINDOW in this case
+    console.log('THIS IS NOT UNDEFINED');
     console.log(this);
 };
 calcAgeArrow(1980);
@@ -71,7 +74,7 @@ calcAgeArrow(1980);
 const jonas1 = {
     year: 1991,
     calcAge: function () {
-
+        console.log('HERE at 76');
         console.log(this);
         console.log(2037 - this.year);
     },

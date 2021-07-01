@@ -48,7 +48,7 @@ console.log(jonas.lastName);
 //todo above is same as
 // Note here the property is to be passed as String
 // prefer this when the keyname is
-// Dynamically Calculated
+// Dynamically Calculated...access like an array
 console.log(jonas['lastName']);
 
 console.log();

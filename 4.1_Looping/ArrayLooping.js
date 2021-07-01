@@ -1,5 +1,6 @@
 
 //todo looping Arrays
+// USE THE FOR OF LOOP
 // Suitable for getting only the ITEM
 // and NOT the INDEX
 const arr =[2,3,5,7,8];

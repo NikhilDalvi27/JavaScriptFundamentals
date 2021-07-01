@@ -8,6 +8,7 @@
 
 const age1  = calcAge1(1997);
 
+//todo this is Declaration
 function calcAge1(birthYear){
     return 2021-birthYear;
 }

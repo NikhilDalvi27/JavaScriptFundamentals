@@ -3,6 +3,15 @@
 // meaning where the this keyword should point to
 // BASICALLY they are used for method Borrowing
 
+//todo Steps
+// 1 copy the requried method into a variable and
+// then use the CALL to bind the this keyword on the newly create object by passing it as a argument
+// book = lufthansa.book
+// book.call(eurowing,23, 'Sarah william'); .....here this keyword will point to eurowing
+// or create a New Method by permanently binding the this keyword to the newly created object
+// const bookEW = book.bind(eurowing);
+// bookEW(42,'Steven William');
+
 
 
 const lufthansa={
@@ -34,7 +43,7 @@ const book = lufthansa.book;
 
 //todo comment this for removing error
 // here the error is bcoz the THIS keyword is set to undefined
- // book(23, 'Sarah william');
+//  book(23, 'Sarah william');
 
 console.log();
 //todo SOLUTION

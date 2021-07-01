@@ -33,7 +33,7 @@ console.log(jonas);
 
 
 //todo Never do this bcoz when you manipulate the passenger Object
-//todo the jonas object will also get manipulated
+// the jonas object will also get manipulated
 const passenger = jonas;
 
 const newPassport = function (person) {
